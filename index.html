@@ -25,21 +25,24 @@
             padding-bottom: 0.5rem;
         }
         a {
-            color: #1a73e8; /* A clear blue color for links */
-            text-decoration: none; /* No underline by default */
+            color: #1a73e8;
+            text-decoration: none;
         }
         a:hover {
-            text-decoration: underline; /* Add underline on hover */
+            text-decoration: underline;
         }
-        li {
-            padding-left: 1rem;
-            text-indent: -1rem;
+        .list-inside li {
+            list-style-position: inside;
         }
-        li::before {
+        .list-inside li::before {
             content: "•";
             color: #000000;
             display: inline-block;
             width: 1rem;
+            margin-left: -1rem;
+        }
+        .list-inside ul li::before {
+            content: "";
         }
     </style>
 </head>
@@ -64,7 +67,7 @@
 
         <!-- Professional Canvas -->
         <section class="mb-10 text-center">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Professional Canvas</h2>
+            <h2 id="professional-canvas" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Professional Canvas</h2>
             <p class="mt-2">
                 <a href="https://drssnraju-consultant.github.io/ai-universe-directory" target="_blank" class="text-blue-600">🔗 AI Universe Directory</a>: Pursuing a comprehensive study of AI apps with a structured framework for classification and usability.
             </p>
@@ -72,7 +75,7 @@
 
         <!-- Focus Area 1: Professional Profile -->
         <section class="mb-10">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 1: Professional Profile</h2>
+            <h2 id="professional-profile" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 1: Professional Profile</h2>
             <ul class="list-disc list-inside space-y-2">
                 <li>IT and Management Professional with extensive experience in industry, academia, and consulting.</li>
                 <li>Expertise in IT Strategy, Project Management, ERP, CRM, BUSINESS PORTALS, GenerativeAI, Business Development, Industry, and Academic Leadership.</li>
@@ -82,7 +85,7 @@
 
         <!-- Focus Area 2: Education -->
         <section class="mb-10">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 2: Education</h2>
+            <h2 id="education" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 2: Education</h2>
             <ul class="list-disc list-inside space-y-2">
                 <li>PhD, Management - Osmania University, Hyderabad (2009)</li>
                 <li>MADE, Distance Education - IGNOU, New Delhi (2005)</li>
@@ -95,7 +98,7 @@
 
         <!-- Focus Area 3: Certifications & Assessments -->
         <section class="mb-10">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 3: Certifications & Assessments</h2>
+            <h2 id="certifications" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 3: Certifications & Assessments</h2>
             <div class="space-y-4">
                 <p class="text-lg font-medium">oDesk (Likert Ranking 1-5)</p>
                 <ul class="list-disc list-inside space-y-2">
@@ -113,7 +116,7 @@
 
         <!-- Focus Area 4: Freelance, Remote Work -->
         <section class="mb-10">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 4: Freelance, Remote Work</h2>
+            <h2 id="freelance-work" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 4: Freelance, Remote Work</h2>
             <p class="text-lg font-medium mb-2">Work on "oDesk" with "Feedback" (Likert Ranking 1-5)</p>
             <ul class="list-disc list-inside space-y-2">
                 <li>Engineering Manager Coach - 5.00: Dr. Raju is an expert and a great engineer.</li>
@@ -141,14 +144,14 @@
 
         <!-- Focus Area 5: International Experience -->
         <section class="mb-10">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 5: International Experience</h2>
+            <h2 id="international-experience" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 5: International Experience</h2>
             <p>Worked with clients across:</p>
             <p class="mt-2">India, Japan, Germany, USA, Italy, Greece, Turkey, UK, UAE, Singapore, Taiwan, and Malaysia.</p>
         </section>
 
         <!-- Focus Area 6: Domain Expertise -->
         <section class="mb-10">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 6: Domain Expertise</h2>
+            <h2 id="domain-expertise" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 6: Domain Expertise</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-2">
                 <ul>
                     <li>Academics</li>
@@ -200,7 +203,7 @@
 
         <!-- Focus Area 7: Experience Summary -->
         <section class="mb-10">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 7: Experience Summary</h2>
+            <h2 id="experience-summary" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 7: Experience Summary</h2>
             <ul class="list-disc list-inside space-y-2">
                 <li>Industry: 20+ years in Information Technology and Management (Top leadership roles)</li>
                 <li>Academia: 20+ years in teaching, research, training, counseling, and consulting</li>
@@ -210,7 +213,7 @@
 
         <!-- Focus Area 8: Academic Roles -->
         <section class="mb-10">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 8: Academic Roles</h2>
+            <h2 id="academic-roles" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 8: Academic Roles</h2>
             <ul class="list-disc list-inside space-y-2">
                 <li>Professor - IAITC, Visakhapatnam</li>
                 <li>Professor & HOD - Mechanical Engineering, GIITS, Visakhapatnam</li>
@@ -223,7 +226,7 @@
 
         <!-- Focus Area 9: Current Position -->
         <section class="mb-10">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 9: Current Position</h2>
+            <h2 id="current-position" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 9: Current Position</h2>
             <p class="text-lg font-medium">Director - Confluence Educational Services (2019-Present)</p>
             <ul class="list-disc list-inside space-y-2 mt-2">
                 <li>Administration</li>
@@ -239,7 +242,7 @@
 
         <!-- Focus Area 10: Business Verticals & Strategy -->
         <section class="mb-10">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 10: Business Verticals & Strategy</h2>
+            <h2 id="business-verticals" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 10: Business Verticals & Strategy</h2>
             <p class="mb-2">Live / Partially Live Portals:</p>
             <ul class="list-disc list-inside space-y-1">
                 <li>confluenceedu.com - Study Abroad Consultancy</li>
@@ -263,7 +266,7 @@
 
         <!-- Focus Area 11: Major Consulting Assignments -->
         <section class="mb-10">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 11: Major Consulting Assignments</h2>
+            <h2 id="consulting-assignments" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 11: Major Consulting Assignments</h2>
             <ul class="list-disc list-inside space-y-2">
                 <li>Rajinder Group, Bombay - IT & Satellite Communication</li>
                 <li>Global Telecom Ltd, Bombay - ERP & Software Services Setup</li>
@@ -280,7 +283,7 @@
 
         <!-- Focus Area 12: Publications & Research Papers -->
         <section class="mb-10">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 12: Publications & Research Papers</h2>
+            <h2 id="publications" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 12: Publications & Research Papers</h2>
             <ul class="list-disc list-inside space-y-2">
                 <li>Citizen Satisfaction & E-Governance - AIMS Annual Convention, New Delhi (2002)</li>
                 <li>Managing Virtual Organizations - National Conference, Indore (2003)</li>
@@ -298,7 +301,7 @@
 
         <!-- Focus Area 13: Job History -->
         <section class="mb-10">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 13: Job History</h2>
+            <h2 id="job-history" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 13: Job History</h2>
             <ul class="list-disc list-inside space-y-2">
                 <li>Director - Confluence Educational Services (2019-Present)</li>
                 <li>Director - Indo American Institutions Technical Campus (2015-2018)</li>
@@ -320,7 +323,7 @@
 
         <!-- Focus Area 14: Contact -->
         <section class="mb-10">
-            <h2 class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 14: Contact</h2>
+            <h2 id="contact" class="text-2xl font-semibold border-b border-black pb-2 mb-4">Focus Area 14: Contact</h2>
             <p class="mb-2">Email: <a href="mailto:drssnraju@gmail.com">drssnraju@gmail.com</a></p>
             <p class="mb-2">Phone: +91 9391101403</p>
             <p class="mb-2">LinkedIn: <a href="www.linkedin.com/in/drssnraju" target="_blank">www.linkedin.com/in/drssnraju</a></p>
